@@ -1,0 +1,71 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>WebApiStarterPack</Name>
+    <Description>Web Api Starter Pack</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WebApiStarterPack</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SimpleWebApiWithDB.csproj" File="SimpleWebApiWithDB.csproj" ReplaceParameters="true">
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseController.cs">BaseController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SecurityController.cs">SecurityController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Entities" TargetFolderName="Entities">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ActionPermission.cs">ActionPermission.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Attachment.cs">Attachment.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AuditableEntity.cs">AuditableEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseSearchCriteria.cs">BaseSearchCriteria.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IdentifiableEntity.cs">IdentifiableEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SearchResult.cs">SearchResult.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SortType.cs">SortType.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Token.cs">Token.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="User.cs">User.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Exceptions" TargetFolderName="Exceptions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationException.cs">ConfigurationException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntityNotFoundException.cs">EntityNotFoundException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PersistenceException.cs">PersistenceException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ServiceException.cs">ServiceException.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Filters" TargetFolderName="Filters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AuthorizationFilter.cs">AuthorizationFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionFilter.cs">ExceptionFilter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggingActionFilter.cs">LoggingActionFilter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Helper.cs">Helper.cs</ProjectItem>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginRequest.cs">LoginRequest.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginResult.cs">LoginResult.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenericService.cs">IGenericService.cs</ProjectItem>
+        <Folder Name="Impl" TargetFolderName="Impl">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BaseGenericService.cs">BaseGenericService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="BasePersistenceService.cs">BasePersistenceService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="BaseService.cs">BaseService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CustomDbContext.cs">CustomDbContext.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SecurityService.cs">SecurityService.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISecurityService.cs">ISecurityService.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
